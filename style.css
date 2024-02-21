@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+html, body {
+    height: 100%;
+}
+html {
+    font-size: 62.5%; /* ->10px */
+}
+body {
+    margin: 0;
+}
+
+.header h1 {
+    display: inline-block;
+    font-size: 2rem;
+    font-family: "Reggae One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #FFFACD;
+    background-color: #003366;
+    margin: 1rem;
+    padding: 0 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.table-name {
+    display: flex;
+    justify-content: center;
+}
+
+.table-name h2 {
+    display: inline-block;
+    margin: 2rem 0 0.5rem 0;
+    text-align: center;
+    font-size: 1.4rem;
+    color: #003366;
+}
+.table-name a {
+    text-decoration: none;
+    color: #003366;
+}
+.table-name a:hover {
+    opacity: 0.5;
+}
+.table-name i::before {
+    padding: 0 1rem;
+}
+
+.table {
+    padding: 0 3rem;
+    overflow-y: hidden;
+    scrollbar-width: thin;
+}
+.table table {
+    border-collapse: collapse;
+    white-space: nowrap;
+    font-size: 1.2rem;
+}
+.table th, .table tr {
+    border: solid 0.1rem gray;
+}
+
+.edit {
+    display: flex;
+    justify-content: center;
+}
+.edit p {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #003366;
+    background-color: #FFFACD;
+    border: solid 0.2rem #003366;
+    border-radius: 0.3rem;
+    margin: 0.5rem 0 0;
+    padding: 0 0.5rem 0;
+}
+.edit p:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
