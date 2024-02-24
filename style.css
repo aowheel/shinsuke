@@ -10,7 +10,7 @@ body {
     margin: 0;
 }
 
-.header h1 {
+#header h1 {
     display: inline-block;
     font-size: 2rem;
     font-family: "Reggae One", sans-serif;
@@ -23,48 +23,59 @@ body {
     border-radius: 0.5rem;
 }
 
-.table-name {
+#month {
     display: flex;
     justify-content: center;
 }
 
-.table-name h2 {
+#month h2 {
     display: inline-block;
     margin: 2rem 0 0.5rem 0;
     text-align: center;
     font-size: 1.4rem;
     color: #003366;
 }
-.table-name a {
+#month a {
     text-decoration: none;
     color: #003366;
 }
-.table-name a:hover {
+#month a:hover {
     opacity: 0.5;
 }
-.table-name i::before {
+#month i::before {
     padding: 0 1rem;
 }
 
-.table {
+#schedule {
     padding: 0 3rem;
     overflow-y: hidden;
     scrollbar-width: thin;
 }
-.table table {
+#schedule table {
     border-collapse: collapse;
     white-space: nowrap;
     font-size: 1.2rem;
 }
-.table th, .table tr {
+#schedule th, #schedule tr, #schedule td {
     border: solid 0.1rem gray;
 }
+#schedule tr:first-child th:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+#schedule td {
+    text-align: center;
+}
+#schedule td:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
 
-.edit {
+#edit {
     display: flex;
     justify-content: center;
 }
-.edit p {
+#edit p {
     font-size: 1.4rem;
     font-weight: bold;
     color: #003366;
@@ -74,7 +85,49 @@ body {
     margin: 0.5rem 0 0;
     padding: 0 0.5rem 0;
 }
-.edit p:hover {
+#edit p:hover {
     opacity: 0.7;
     cursor: pointer;
+}
+
+#add {
+    display: none;
+}
+#select {
+    display: flex;
+    justify-content: center;
+}
+#select p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    width: 3rem;
+    font-size: 2rem;
+    color: #003366;
+    line-height: 1;
+    border-radius: 0.5rem;
+    margin: 0.5rem 1rem 0;
+}
+#select p:hover {
+    box-shadow: 0.2rem 0.2rem 0.4rem #003366 inset;
+    cursor: pointer;
+}
+
+#notes {
+    display: flex;
+    justify-content: center;
+}
+#notes p {
+    display: flex;
+    justify-content: center;
+    width: 3rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #003366;
+    opacity: 0.5;
+    margin: 0 1rem;
+}
+#notes p {
+    cursor: default;
 }
